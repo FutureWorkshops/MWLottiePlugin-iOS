@@ -10,10 +10,11 @@ import MobileWorkflowCore
 
 public class MWLottieStep: ORKStep {
     
-    let fileURL: URL
+    let remoteAnimationURL: URL
+    private(set) var localAnimationURL: URL?
     
     init(identifier: String, fileURL: URL) {
-        self.fileURL = fileURL
+        self.remoteAnimationURL = fileURL
         super.init(identifier: identifier)
     }
     
