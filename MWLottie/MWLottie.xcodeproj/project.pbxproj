@@ -11,6 +11,7 @@
 		B190CA3925939F950066F8C1 /* MWLottiePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */; };
 		B190CA3A25939F950066F8C1 /* MWLottiePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B190CA4125939FFF0066F8C1 /* app.json in Resources */ = {isa = PBXBuildFile; fileRef = B190CA4025939FFF0066F8C1 /* app.json */; };
+		B190CA452593A03E0066F8C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190CA442593A03E0066F8C1 /* SceneDelegate.swift */; };
 		B75028B51C5A3F94000EB3CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75028B41C5A3F94000EB3CF /* AppDelegate.swift */; };
 		B75028BC1C5A3F94000EB3CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75028BB1C5A3F94000EB3CF /* Assets.xcassets */; };
 		B75028BF1C5A3F94000EB3CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75028BD1C5A3F94000EB3CF /* LaunchScreen.storyboard */; };
@@ -46,6 +47,7 @@
 		78C0E9BB20BC315100255055 /* MWLottie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MWLottie.entitlements; sourceTree = "<group>"; };
 		B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MWLottiePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B190CA4025939FFF0066F8C1 /* app.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = app.json; sourceTree = "<group>"; };
+		B190CA442593A03E0066F8C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B75028B11C5A3F94000EB3CF /* MWLottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWLottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75028B41C5A3F94000EB3CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B75028BB1C5A3F94000EB3CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				B75028D51C5A404A000EB3CF /* Resources */,
 				B75028D41C5A4045000EB3CF /* Supporting Files */,
 				B75028B41C5A3F94000EB3CF /* AppDelegate.swift */,
+				B190CA442593A03E0066F8C1 /* SceneDelegate.swift */,
 			);
 			path = MWLottie;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75028B51C5A3F94000EB3CF /* AppDelegate.swift in Sources */,
+				B190CA452593A03E0066F8C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
