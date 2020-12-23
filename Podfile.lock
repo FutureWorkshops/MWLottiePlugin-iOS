@@ -1,18 +1,23 @@
 PODS:
+  - lottie-ios (3.1.9)
   - MobileWorkflow (0.0.61):
     - MobileWorkflow/Core (= 0.0.61)
   - MobileWorkflow/Core (0.0.61)
 
 DEPENDENCIES:
+  - lottie-ios
   - MobileWorkflow
 
 SPEC REPOS:
   https://github.com/FutureWorkshops/FWTPodspecs.git:
     - MobileWorkflow
+  trunk:
+    - lottie-ios
 
 SPEC CHECKSUMS:
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   MobileWorkflow: cfcce71997009c578a1ce873a161ce19a2571f27
 
-PODFILE CHECKSUM: d1b9b82c296e52713775df25db66c1fd331ede1e
+PODFILE CHECKSUM: c6b940311ad901e1663666921900541f441e67e8
 
 COCOAPODS: 1.10.0
