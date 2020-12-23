@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.appDelegate?.eventDelegate = eventService
         
         let manager = AppConfigurationManager(
-            withPlugins: [],
+            withPlugins: [MWLottiePlugin.self],
             fileManager: FileManager.default,
             networkService: NetworkAsyncTaskService(),
             eventService: eventService,
