@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AB313517C26A7E0FFA8D176A /* Pods_MWLottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDD3F4DC4F9A091E7143AFB /* Pods_MWLottie.framework */; };
+		B190CA3925939F950066F8C1 /* MWLottiePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */; };
+		B190CA3A25939F950066F8C1 /* MWLottiePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B75028B51C5A3F94000EB3CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75028B41C5A3F94000EB3CF /* AppDelegate.swift */; };
 		B75028BC1C5A3F94000EB3CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75028BB1C5A3F94000EB3CF /* Assets.xcassets */; };
 		B75028BF1C5A3F94000EB3CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75028BD1C5A3F94000EB3CF /* LaunchScreen.storyboard */; };
@@ -24,9 +26,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B190CA3B25939F950066F8C1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B190CA3A25939F950066F8C1 /* MWLottiePlugin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3EDD3F4DC4F9A091E7143AFB /* Pods_MWLottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWLottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C0E9BB20BC315100255055 /* MWLottie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MWLottie.entitlements; sourceTree = "<group>"; };
+		B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MWLottiePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75028B11C5A3F94000EB3CF /* MWLottie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MWLottie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75028B41C5A3F94000EB3CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B75028BB1C5A3F94000EB3CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B190CA3925939F950066F8C1 /* MWLottiePlugin.framework in Frameworks */,
 				AB313517C26A7E0FFA8D176A /* Pods_MWLottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +80,7 @@
 		1D422113C90D1EF0158CE982 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */,
 				3EDD3F4DC4F9A091E7143AFB /* Pods_MWLottie.framework */,
 			);
 			name = Frameworks;
@@ -154,6 +173,7 @@
 				B75028AD1C5A3F94000EB3CF /* Sources */,
 				B75028AE1C5A3F94000EB3CF /* Frameworks */,
 				B75028AF1C5A3F94000EB3CF /* Resources */,
+				B190CA3B25939F950066F8C1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
