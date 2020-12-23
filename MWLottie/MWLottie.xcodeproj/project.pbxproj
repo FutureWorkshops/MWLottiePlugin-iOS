@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB313517C26A7E0FFA8D176A /* Pods_MWLottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDD3F4DC4F9A091E7143AFB /* Pods_MWLottie.framework */; };
+		1E77201A14D96AACC71BDEFD /* Pods_MWLottieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4851445B7F2D5073074C2F /* Pods_MWLottieTests.framework */; };
 		B190CA3925939F950066F8C1 /* MWLottiePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */; };
 		B190CA3A25939F950066F8C1 /* MWLottiePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B190CA4125939FFF0066F8C1 /* app.json in Resources */ = {isa = PBXBuildFile; fileRef = B190CA4025939FFF0066F8C1 /* app.json */; };
@@ -16,6 +16,7 @@
 		B75028BC1C5A3F94000EB3CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75028BB1C5A3F94000EB3CF /* Assets.xcassets */; };
 		B75028BF1C5A3F94000EB3CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75028BD1C5A3F94000EB3CF /* LaunchScreen.storyboard */; };
 		B75028CA1C5A3F94000EB3CF /* MWLottieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75028C91C5A3F94000EB3CF /* MWLottieTests.swift */; };
+		FC72F2C99171A48E3CF9461D /* Pods_MWLottie_MWLottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255B08774E54D56793732681 /* Pods_MWLottie_MWLottie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +44,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3EDD3F4DC4F9A091E7143AFB /* Pods_MWLottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWLottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0790DB25F588CF56B6B3C13B /* Pods-MWLottie-MWLottie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLottie-MWLottie.release.xcconfig"; path = "Target Support Files/Pods-MWLottie-MWLottie/Pods-MWLottie-MWLottie.release.xcconfig"; sourceTree = "<group>"; };
+		255B08774E54D56793732681 /* Pods_MWLottie_MWLottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWLottie_MWLottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF2C9A8AC3BDDC8C9E9DEFA /* Pods-MWLottie-MWLottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLottie-MWLottie.debug.xcconfig"; path = "Target Support Files/Pods-MWLottie-MWLottie/Pods-MWLottie-MWLottie.debug.xcconfig"; sourceTree = "<group>"; };
+		6E316C8471512CB2D33763B0 /* Pods-MWLottieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLottieTests.release.xcconfig"; path = "Target Support Files/Pods-MWLottieTests/Pods-MWLottieTests.release.xcconfig"; sourceTree = "<group>"; };
 		78C0E9BB20BC315100255055 /* MWLottie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MWLottie.entitlements; sourceTree = "<group>"; };
+		7A8FE5FF12A678A2965D6BBA /* Pods-MWLottieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLottieTests.debug.xcconfig"; path = "Target Support Files/Pods-MWLottieTests/Pods-MWLottieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD4851445B7F2D5073074C2F /* Pods_MWLottieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWLottieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MWLottiePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B190CA4025939FFF0066F8C1 /* app.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = app.json; sourceTree = "<group>"; };
 		B190CA442593A03E0066F8C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B190CA3925939F950066F8C1 /* MWLottiePlugin.framework in Frameworks */,
-				AB313517C26A7E0FFA8D176A /* Pods_MWLottie.framework in Frameworks */,
+				FC72F2C99171A48E3CF9461D /* Pods_MWLottie_MWLottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E77201A14D96AACC71BDEFD /* Pods_MWLottieTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				B190CA3825939F950066F8C1 /* MWLottiePlugin.framework */,
-				3EDD3F4DC4F9A091E7143AFB /* Pods_MWLottie.framework */,
+				255B08774E54D56793732681 /* Pods_MWLottie_MWLottie.framework */,
+				AD4851445B7F2D5073074C2F /* Pods_MWLottieTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,6 +103,10 @@
 			children = (
 				DFED9B8FF5B8D6FFF137996D /* Pods-MWLottie.debug.xcconfig */,
 				D00D85C49DD42CBBF0993A31 /* Pods-MWLottie.release.xcconfig */,
+				3FF2C9A8AC3BDDC8C9E9DEFA /* Pods-MWLottie-MWLottie.debug.xcconfig */,
+				0790DB25F588CF56B6B3C13B /* Pods-MWLottie-MWLottie.release.xcconfig */,
+				7A8FE5FF12A678A2965D6BBA /* Pods-MWLottieTests.debug.xcconfig */,
+				6E316C8471512CB2D33763B0 /* Pods-MWLottieTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -188,6 +200,7 @@
 				B75028AE1C5A3F94000EB3CF /* Frameworks */,
 				B75028AF1C5A3F94000EB3CF /* Resources */,
 				B190CA3B25939F950066F8C1 /* Embed Frameworks */,
+				7D17DCAAE4C5008E9B0C8E53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B75028D11C5A3F94000EB3CF /* Build configuration list for PBXNativeTarget "MWLottieTests" */;
 			buildPhases = (
+				465DC2FA5CD0DD9D9BE6BE2B /* [CP] Check Pods Manifest.lock */,
 				B75028C11C5A3F94000EB3CF /* Sources */,
 				B75028C21C5A3F94000EB3CF /* Frameworks */,
 				B75028C31C5A3F94000EB3CF /* Resources */,
@@ -299,11 +313,51 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MWLottie-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MWLottie-MWLottie-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		465DC2FA5CD0DD9D9BE6BE2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MWLottieTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D17DCAAE4C5008E9B0C8E53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MWLottie-MWLottie/Pods-MWLottie-MWLottie-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/MobileWorkflowCore/MobileWorkflowCore.framework/MobileWorkflowCore",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MobileWorkflowCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MWLottie-MWLottie/Pods-MWLottie-MWLottie-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -455,7 +509,7 @@
 		};
 		B75028CF1C5A3F94000EB3CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFED9B8FF5B8D6FFF137996D /* Pods-MWLottie.debug.xcconfig */;
+			baseConfigurationReference = 3FF2C9A8AC3BDDC8C9E9DEFA /* Pods-MWLottie-MWLottie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "MWLottie/Supporting Files/MWLottie.entitlements";
@@ -473,7 +527,7 @@
 		};
 		B75028D01C5A3F94000EB3CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D00D85C49DD42CBBF0993A31 /* Pods-MWLottie.release.xcconfig */;
+			baseConfigurationReference = 0790DB25F588CF56B6B3C13B /* Pods-MWLottie-MWLottie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "MWLottie/Supporting Files/MWLottie.entitlements";
@@ -491,6 +545,7 @@
 		};
 		B75028D21C5A3F94000EB3CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8FE5FF12A678A2965D6BBA /* Pods-MWLottieTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Manual;
@@ -507,6 +562,7 @@
 		};
 		B75028D31C5A3F94000EB3CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E316C8471512CB2D33763B0 /* Pods-MWLottieTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Manual;
