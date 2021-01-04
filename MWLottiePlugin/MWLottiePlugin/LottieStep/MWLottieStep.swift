@@ -14,7 +14,7 @@ public class MWLottieStep: ORKStep {
     private let _services: MobileWorkflowServices
     private let _authenticationWorkflowId: Int?
     
-    private let remoteAnimationURL: URL
+    private var remoteAnimationURL: URL
     
     init(identifier: String, fileURL: URL, services: MobileWorkflowServices, authenticationWorkflowId: Int?) {
         self.remoteAnimationURL = fileURL
@@ -61,7 +61,30 @@ extension MWLottieStep: RemoteContentStep {
     }
 
     public func loadContent(completion: @escaping (Result<Data, Error>) -> Void) {
-        self.perform(url: self.remoteAnimationURL.absoluteString, method: .GET, completion: completion)
+//        self.perform(url: self.remoteAnimationURL.absoluteString, method: .GET, completion: completion)
+        
+        #warning("This implementation is wrong, it bypasses the system. For some reason it doesn't seem to be able to decode the JSON as Data")
+        let task = URLSession.shared.dataTask(with: URLRequest(url: self.remoteAnimationURL)) { (dataOrNil, responseOrNil, errorOrNil) in
+            if let error = errorOrNil {
+                completion(.failure(error))
+            } else if let data = dataOrNil {
+                completion(.success(data))
+            } else {
+                assertionFailure("No error nor data")
+            }
+        }
+        task.resume()
+    }
+}
+
+extension MWLottieStep: SyncableContentSource {
+    public var resolvedURL: URL? {
+        get {
+            return self.remoteAnimationURL
+        }
+        set {
+            self.remoteAnimationURL = newValue ?? self.remoteAnimationURL
+        }
     }
 }
 
