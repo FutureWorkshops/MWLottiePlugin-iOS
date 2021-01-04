@@ -36,7 +36,7 @@ public class MWLottieViewController: ORKStepViewController {
             self?.animationView.animation = animation
             self?.animationView.loopMode = .loop
             self?.animationView.play()
-        }, animationCache: nil)
+        }, animationCache: LRUAnimationCache.sharedCache)
         
     }
 }
