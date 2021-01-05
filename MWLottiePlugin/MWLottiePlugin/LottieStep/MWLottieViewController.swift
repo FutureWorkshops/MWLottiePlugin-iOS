@@ -9,9 +9,12 @@ import Lottie
 import Foundation
 import MobileWorkflowCore
 
-public class MWLottieViewController: ORKStepViewController {
+public class MWLottieViewController: ORKInstructionStepViewController {
     
     private let animationView = AnimationView()
+    private var imageView: UIImageView? {
+        return self.view.subviews.first?.subviews.first?.subviews.first?.subviews.first?.subviews.first(where: { $0 is UIImageView }) as? UIImageView
+    }
     private var lottieStep: MWLottieStep {
         guard let mapStep = self.step as? MWLottieStep else {
             preconditionFailure("Unexpected step type. Expecting \(String(describing: MWLottieStep.self)), got \(String(describing: type(of: self.step)))")
@@ -23,20 +26,23 @@ public class MWLottieViewController: ORKStepViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.animationView.frame = self.view.bounds
-        self.animationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        self.view.addSubview(self.animationView)
-        
-        Animation.loadedFrom(url: self.lottieStep.remoteAnimationURL, closure: { [weak self] animationOrNil in
-            guard let animation = animationOrNil else {
-                assertionFailure("Failed to load animation")
-                return
-            }
+        if let dummyImageView = self.imageView {
+            self.animationView.frame = dummyImageView.bounds
+            self.animationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            dummyImageView.addSubview(self.animationView)
             
-            self?.animationView.animation = animation
-            self?.animationView.loopMode = .loop
-            self?.animationView.play()
-        }, animationCache: LRUAnimationCache.sharedCache)
-        
+            Animation.loadedFrom(url: self.lottieStep.remoteAnimationURL, closure: { [weak self] animationOrNil in
+                guard let animation = animationOrNil else {
+                    assertionFailure("Failed to load animation")
+                    return
+                }
+                
+                guard let strongSelf = self else { return }
+                
+                strongSelf.animationView.animation = animation
+                strongSelf.animationView.loopMode = .loop
+                strongSelf.animationView.play()
+            }, animationCache: LRUAnimationCache.sharedCache)
+        }
     }
 }
