@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             fileManager: FileManager.default,
             networkService: NetworkAsyncTaskService(),
             eventService: eventService,
-            supportServices: [AuthenticationService(credentialsStore: CredentialsStore(), authRedirectHandler: eventService.authRedirectHandler())]
+            asyncServices: [AuthenticationService(credentialsStore: CredentialsStore(), authRedirectHandler: eventService.authRedirectHandler())]
         )
         let preferredConfigurations = self.preferredConfigurations(urlContexts: connectionOptions.urlContexts)
         self.rootViewController = MobileWorkflowRootViewController(manager: manager, preferredConfigurations: preferredConfigurations)
