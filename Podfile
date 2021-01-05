@@ -12,7 +12,7 @@ project 'MWLottiePlugin/MWLottiePlugin.xcodeproj'
 
 abstract_target 'MWLottie' do
   pod 'MobileWorkflow'
-  pod 'lottie-ios'
+  pod 'lottie-ios', '~> 3.1.9'
   #here you can add any extra dependencies that you need
 
   target 'MWLottie' do
