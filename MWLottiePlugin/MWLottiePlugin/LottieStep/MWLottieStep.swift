@@ -11,16 +11,11 @@ import MobileWorkflowCore
 public class MWLottieStep: ORKInstructionStep {
     
     let remoteAnimationURL: URL
-    /// This UIImage **always** returns an emtpy image. It's only used for positioning the lottie animation in the correct place
+    /// This UIImage **always** returns an emtpy image. It's only used for positioning the lottie animation in the correct place.
     /// Setting a value to this property does nothing in this subclass.
     public override var image: UIImage? {
-        get {
-            return UIImage()
-        }
-        
-        set {
-            // do nothing, this image is just being used for positioning
-        }
+        get { UIImage() }
+        set {}
     }
     
     init(identifier: String, fileURL: URL) {
