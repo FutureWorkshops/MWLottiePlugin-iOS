@@ -5,6 +5,9 @@
       location = "group:MWLottie/MWLottie.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:MWLottiePlugin/MWLottiePlugin.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

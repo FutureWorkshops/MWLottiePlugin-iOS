@@ -1,0 +1,39 @@
+{
+    "gatherAnalytics": false,
+    "id": 461,
+    "locales": [],
+    "name": "Lottie",
+    "navigationStyle": "list",
+    "servers": [],
+    "systemTintColor": "blue",
+    "workflows": [
+        {
+            "id": 842,
+            "identifier": "Christmas",
+            "materialIconName": "",
+            "name": "Christmas",
+            "navigationRules": [
+                {
+                    "from": "merry_christmas",
+                    "rules": [
+                        {
+                            "to": "ORKNullStepIdentifier"
+                        }
+                    ]
+                }
+            ],
+            "sfSymbolName": "",
+            "steps": [
+                {
+                    "identifier": "merry_christmas",
+                    "lottieFileURL": "https://assets7.lottiefiles.com/private_files/lf30_p9unfb2k.json",
+                    "optional": false,
+                    "text": "Have a holly jolly Christmas",
+                    "title": "Merry Christmas",
+                    "type": "io.mobileworkflow.LottieInstructions",
+                    "uuid": "784485e5-9cc6-49ad-9cd8-8a6baa1932e4"
+                }
+            ]
+        }
+    ]
+}
