@@ -11,38 +11,31 @@ import MobileWorkflowCore
 
 public class MWLottieViewController: ORKInstructionStepViewController {
     
-    private let animationView = AnimationView()
-    private var imageView: UIImageView? {
-        return self.view.subviews.first?.subviews.first?.subviews.first?.subviews.first?.subviews.first(where: { $0 is UIImageView }) as? UIImageView
-    }
-    private var lottieStep: MWLottieStep {
-        guard let mapStep = self.step as? MWLottieStep else {
-            preconditionFailure("Unexpected step type. Expecting \(String(describing: MWLottieStep.self)), got \(String(describing: type(of: self.step)))")
-        }
-        
-        return mapStep
-    }
+    //MARK: private properties
+    private var lottieStep: MWLottieStep { self.step as! MWLottieStep }
     
+    //MARK: Lifecycle
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let dummyImageView = self.imageView {
-            self.animationView.frame = dummyImageView.bounds
-            self.animationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            dummyImageView.addSubview(self.animationView)
+        if let placeholderImageView = self.imageView {
+            let animationView = AnimationView()
+            animationView.frame = placeholderImageView.bounds
+            animationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            placeholderImageView.addSubview(animationView)
             
-            Animation.loadedFrom(url: self.lottieStep.remoteAnimationURL, closure: { [weak self] animationOrNil in
+            Animation.loadedFrom(url: self.lottieStep.remoteAnimationURL, closure: { animationOrNil in
                 guard let animation = animationOrNil else {
                     assertionFailure("Failed to load animation")
                     return
                 }
                 
-                guard let strongSelf = self else { return }
-                
-                strongSelf.animationView.animation = animation
-                strongSelf.animationView.loopMode = .loop
-                strongSelf.animationView.play()
+                animationView.animation = animation
+                animationView.loopMode = .loop
+                animationView.play()
             }, animationCache: LRUAnimationCache.sharedCache)
+        } else {
+            assertionFailure("The lottie animation won't be shown because the imageView is missing and we don't know where to place it")
         }
     }
 }
