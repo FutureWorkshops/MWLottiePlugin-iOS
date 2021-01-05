@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
 	
     s.subspec 'Core' do |cs|
 	    cs.dependency            'MobileWorkflow'
+        cs.dependency            'lottie-ios', '~> 3.1.9'
         cs.source_files          = 'MWLottiePlugin/MWLottiePlugin/**/*.swift'
     end
 end
