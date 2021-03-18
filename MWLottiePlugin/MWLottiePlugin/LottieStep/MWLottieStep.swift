@@ -33,7 +33,7 @@ public class MWLottieStep: ORKInstructionStep {
 }
 
 extension MWLottieStep: MobileWorkflowStep {
-    public static func build(step stepInfo: StepInfo, services: MobileWorkflowServices) throws -> ORKStep {
+    public static func build(stepInfo: StepInfo, services: MobileWorkflowServices) throws -> Step {
         if let urlString = stepInfo.data.content["lottieFileURL"] as? String, let url = URL(string: urlString) {
             let step = MWLottieStep(identifier: stepInfo.data.identifier, fileURL: url)
             step.text = stepInfo.data.content["text"] as? String
