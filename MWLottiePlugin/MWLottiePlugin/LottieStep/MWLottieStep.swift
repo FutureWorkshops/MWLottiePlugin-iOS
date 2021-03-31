@@ -36,7 +36,7 @@ extension MWLottieStep: MobileWorkflowStep {
     public static func build(stepInfo: StepInfo, services: MobileWorkflowServices) throws -> Step {
         if let urlString = stepInfo.data.content["lottieFileURL"] as? String, let url = URL(string: urlString) {
             let step = MWLottieStep(identifier: stepInfo.data.identifier, fileURL: url)
-            step.text = stepInfo.data.content["text"] as? String
+            step.text = services.localizationService.translate(stepInfo.data.content["text"] as? String)
             return step
         } else {
             throw NSError(domain: "io.mobileworkflow.lottie", code: 0, userInfo: [NSLocalizedDescriptionKey:"URL to fetch the lottie file missing from the JSON"])
