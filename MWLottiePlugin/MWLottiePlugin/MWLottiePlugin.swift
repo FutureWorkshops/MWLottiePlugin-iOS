@@ -8,13 +8,13 @@
 import Foundation
 import MobileWorkflowCore
 
-public struct MWLottiePlugin: MobileWorkflowPlugin {
-    public static var allStepsTypes: [MobileWorkflowStepType] {
+public struct MWLottiePlugin: Plugin {
+    public static var allStepsTypes: [StepType] {
         return MWLottieStepType.allCases
     }
 }
 
-public enum MWLottieStepType: String, MobileWorkflowStepType, CaseIterable {
+public enum MWLottieStepType: String, StepType, CaseIterable {
     
     case instructions = "io.mobileworkflow.LottieInstructions"
     
