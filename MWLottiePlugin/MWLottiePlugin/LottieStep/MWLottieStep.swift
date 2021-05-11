@@ -34,7 +34,7 @@ public class MWLottieStep: MWStep, InstructionStep {
     }
     
     public override func instantiateViewController() -> StepViewController {
-        MWLottieViewController(step: self)
+        MWLottieViewController(instructionStep: self)
     }
 }
 
