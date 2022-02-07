@@ -8,7 +8,7 @@
 import Foundation
 import MobileWorkflowCore
 
-public struct MWLottiePlugin: Plugin {
+public struct MWLottiePluginStruct: Plugin {
     public static var allStepsTypes: [StepType] {
         return MWLottieStepType.allCases
     }
