@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'MWLottiePlugin'
-    s.version               = '0.0.7'
+    s.version               = '0.1.0'
     s.summary               = 'Lottie plugin for MobileWorkflow on iOS.'
     s.description           = <<-DESC
     Lottie plugin for MobileWorkflow on iOS, containg Lottie related steps:
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 	s.default_subspecs      = 'Core'
 	
     s.subspec 'Core' do |cs|
-        cs.dependency            'MobileWorkflow', '~> 1.0.0'
+        cs.dependency            'MobileWorkflow', '~> 2.0.0'
         cs.dependency            'lottie-ios', '~> 3.1.9'
         cs.source_files          = 'MWLottiePlugin/MWLottiePlugin/**/*.swift'
     end
