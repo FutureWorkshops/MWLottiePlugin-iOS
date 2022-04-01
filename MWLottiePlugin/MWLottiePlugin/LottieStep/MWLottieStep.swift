@@ -40,13 +40,17 @@ public class MWLottieStep: MWStep, InstructionStep {
 }
 
 extension MWLottieStep: BuildableStep {
+    
+    public static var mandatoryCodingPaths: [CodingKey] {
+        ["lottieFileURL"]
+    }
+    
     public static func build(stepInfo: StepInfo, services: StepServices) throws -> Step {
-        if let urlString = stepInfo.data.content["lottieFileURL"] as? String, let url = URL(string: urlString) {
-            let step = MWLottieStep(identifier: stepInfo.data.identifier, fileURL: url, session: stepInfo.session, services: services)
-            step.text = services.localizationService.translate(stepInfo.data.content["text"] as? String)
-            return step
-        } else {
-            throw ParseError.invalidStepData(cause: "URL to fetch the lottie file missing from the JSON")
+        guard let urlString = stepInfo.data.content["lottieFileURL"] as? String, let url = URL(string: urlString) else {
+            throw ParseError.invalidStepData(cause: "Missing or malformed 'lottieFileURL' property")
         }
+        let step = MWLottieStep(identifier: stepInfo.data.identifier, fileURL: url, session: stepInfo.session, services: services)
+        step.text = services.localizationService.translate(stepInfo.data.content["text"] as? String)
+        return step
     }
 }
