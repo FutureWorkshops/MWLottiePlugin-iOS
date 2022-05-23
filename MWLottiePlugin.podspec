@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'MWLottiePlugin'
-    s.version               = '0.1.1'
+    s.version               = '0.1.2'
     s.summary               = 'Lottie plugin for MobileWorkflow on iOS.'
     s.description           = <<-DESC
     Lottie plugin for MobileWorkflow on iOS, containg Lottie related steps:
