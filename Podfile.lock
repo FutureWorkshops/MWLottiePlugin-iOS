@@ -1,8 +1,8 @@
 PODS:
   - lottie-ios (3.1.9)
-  - MobileWorkflow (2.1.1):
-    - MobileWorkflow/Core (= 2.1.1)
-  - MobileWorkflow/Core (2.1.1)
+  - MobileWorkflow (2.1.21):
+    - MobileWorkflow/Core (= 2.1.21)
+  - MobileWorkflow/Core (2.1.21)
 
 DEPENDENCIES:
   - lottie-ios (~> 3.1.9)
@@ -16,8 +16,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
-  MobileWorkflow: 6d847cb8e553969e3147d96abb2c308fc9c7d717
+  MobileWorkflow: 14ef663d7348dee12b5b435c755055ad6020c8f9
 
-PODFILE CHECKSUM: 7e5cda21ac252203b9ab5a165bffb6d3f892bed3
+PODFILE CHECKSUM: 586395dee70446b596e21c049a0ed6a0cb9490c5
 
 COCOAPODS: 1.11.3

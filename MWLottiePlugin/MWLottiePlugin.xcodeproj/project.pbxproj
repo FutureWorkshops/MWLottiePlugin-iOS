@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		289300DADCC551F776DF44A7 /* MWLottiePluginStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B750186682EBA065911AF66 /* MWLottiePluginStruct.swift */; };
+		46DD50BFDEAF17AD900E6151 /* MWLottiePluginStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ABAC2AF4D1DF418E050D76 /* MWLottiePluginStruct.swift */; };
 		4B37A870FD13B8BDBF7CB48E /* Pods_MWLottiePluginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC7FEB60FD7185600AA3D4F /* Pods_MWLottiePluginTests.framework */; };
-		7C9903C008D17B5D7B863923 /* MWLottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1595E3870A3F2D7DAA7807D7 /* MWLottieViewController.swift */; };
-		90B42A855FD225AD025F9E28 /* MWLottieStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FC614346AAD3FC06E05E1 /* MWLottieStep.swift */; };
+		7F73EDC7E259C9E03F19BB66 /* MWLottieStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC88AFDB174152F36E6F7E9 /* MWLottieStep.swift */; };
 		B190CA2425939F7B0066F8C1 /* MWLottiePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B190CA1A25939F7B0066F8C1 /* MWLottiePlugin.framework */; };
 		B190CA2925939F7B0066F8C1 /* MWLottiePluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190CA2825939F7B0066F8C1 /* MWLottiePluginTests.swift */; };
-		B190CA2B25939F7B0066F8C1 /* (null) in Headers */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Public, ); }; };
+		B190CA2B25939F7B0066F8C1 /* BuildFile in Headers */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (Public, ); }; };
+		BE1DF6D282C284920D763853 /* MWLottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89999279A725C11F5A7FA6E /* MWLottieViewController.swift */; };
 		C1F1AB3769C22AE3C174E5AF /* Pods_MWLottie_MWLottiePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C2A24F4B9F3528B9279A0C /* Pods_MWLottie_MWLottiePlugin.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,20 +28,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1595E3870A3F2D7DAA7807D7 /* MWLottieViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MWLottieViewController.swift; sourceTree = "<group>"; };
+		008A6002E0A61791C5E84320 /* MWLottiePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MWLottiePlugin.h; sourceTree = "<group>"; };
 		172B37FCC3D59BDEF590F6EB /* Pods-MWLottiePluginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLottiePluginTests.debug.xcconfig"; path = "Target Support Files/Pods-MWLottiePluginTests/Pods-MWLottiePluginTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AAA88FA9FE24E95DB0ED920 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		216580824E9293ED7D7278B4 /* Pods-MWLottiePluginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLottiePluginTests.release.xcconfig"; path = "Target Support Files/Pods-MWLottiePluginTests/Pods-MWLottiePluginTests.release.xcconfig"; sourceTree = "<group>"; };
+		55ABAC2AF4D1DF418E050D76 /* MWLottiePluginStruct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MWLottiePluginStruct.swift; sourceTree = "<group>"; };
 		5A1F1A7707051A7DD36F1A69 /* Pods-MWLottie-MWLottiePlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLottie-MWLottiePlugin.release.xcconfig"; path = "Target Support Files/Pods-MWLottie-MWLottiePlugin/Pods-MWLottie-MWLottiePlugin.release.xcconfig"; sourceTree = "<group>"; };
 		5AC7FEB60FD7185600AA3D4F /* Pods_MWLottiePluginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWLottiePluginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B750186682EBA065911AF66 /* MWLottiePluginStruct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MWLottiePluginStruct.swift; sourceTree = "<group>"; };
-		83BC943021AE9FD6BFE59380 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95BA3A4FB1296F06F9BB8516 /* MWLottiePlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MWLottiePlugin.h; sourceTree = "<group>"; };
 		965D83E1F732D6C3D79879A7 /* Pods-MWLottie-MWLottiePlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MWLottie-MWLottiePlugin.debug.xcconfig"; path = "Target Support Files/Pods-MWLottie-MWLottiePlugin/Pods-MWLottie-MWLottiePlugin.debug.xcconfig"; sourceTree = "<group>"; };
+		9FC88AFDB174152F36E6F7E9 /* MWLottieStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MWLottieStep.swift; sourceTree = "<group>"; };
 		B190CA1A25939F7B0066F8C1 /* MWLottiePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MWLottiePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B190CA2325939F7B0066F8C1 /* MWLottiePluginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MWLottiePluginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B190CA2825939F7B0066F8C1 /* MWLottiePluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWLottiePluginTests.swift; sourceTree = "<group>"; };
 		B190CA2A25939F7B0066F8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA9FC614346AAD3FC06E05E1 /* MWLottieStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MWLottieStep.swift; sourceTree = "<group>"; };
+		B89999279A725C11F5A7FA6E /* MWLottieViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MWLottieViewController.swift; sourceTree = "<group>"; };
 		E9C2A24F4B9F3528B9279A0C /* Pods_MWLottie_MWLottiePlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MWLottie_MWLottiePlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,12 +75,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5B708A453299DF20C974F322 /* LottieStep */ = {
+		56C7E5DA0B03BB8F3BCDCD97 /* LottieStep */ = {
 			isa = PBXGroup;
 			children = (
-				1595E3870A3F2D7DAA7807D7 /* MWLottieViewController.swift */,
-				CA9FC614346AAD3FC06E05E1 /* MWLottieStep.swift */,
+				B89999279A725C11F5A7FA6E /* MWLottieViewController.swift */,
+				9FC88AFDB174152F36E6F7E9 /* MWLottieStep.swift */,
 			);
+			name = LottieStep;
 			path = LottieStep;
 			sourceTree = "<group>";
 		};
@@ -119,10 +120,10 @@
 		B190CA1C25939F7B0066F8C1 /* MWLottiePlugin */ = {
 			isa = PBXGroup;
 			children = (
-				95BA3A4FB1296F06F9BB8516 /* MWLottiePlugin.h */,
-				5B708A453299DF20C974F322 /* LottieStep */,
-				5B750186682EBA065911AF66 /* MWLottiePluginStruct.swift */,
-				83BC943021AE9FD6BFE59380 /* Info.plist */,
+				008A6002E0A61791C5E84320 /* MWLottiePlugin.h */,
+				56C7E5DA0B03BB8F3BCDCD97 /* LottieStep */,
+				55ABAC2AF4D1DF418E050D76 /* MWLottiePluginStruct.swift */,
+				1AAA88FA9FE24E95DB0ED920 /* Info.plist */,
 			);
 			path = MWLottiePlugin;
 			sourceTree = "<group>";
@@ -143,7 +144,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B190CA2B25939F7B0066F8C1 /* (null) in Headers */,
+				B190CA2B25939F7B0066F8C1 /* BuildFile in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,9 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C9903C008D17B5D7B863923 /* MWLottieViewController.swift in Sources */,
-				90B42A855FD225AD025F9E28 /* MWLottieStep.swift in Sources */,
-				289300DADCC551F776DF44A7 /* MWLottiePluginStruct.swift in Sources */,
+				BE1DF6D282C284920D763853 /* MWLottieViewController.swift in Sources */,
+				7F73EDC7E259C9E03F19BB66 /* MWLottieStep.swift in Sources */,
+				46DD50BFDEAF17AD900E6151 /* MWLottiePluginStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
